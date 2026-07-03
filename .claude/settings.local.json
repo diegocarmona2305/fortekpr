@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node -v)",
+      "PowerShell(npm -v)",
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue; where.exe node 2>&1; where.exe npm 2>&1; Get-Command -All node -ErrorAction SilentlyContinue; $env:Path -split ';' | Select-String -Pattern 'node')",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\\\\Programs\" -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem \"$env:LOCALAPPDATA\\\\nvm\" -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem \"$env:USERPROFILE\\\\.volta\" -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem \"C:\\\\\" -ErrorAction SilentlyContinue | Select-Object Name)",
+      "PowerShell(Get-Command winget -ErrorAction SilentlyContinue)",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\diegu\\\\fortekpr\"; $env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); npm install framer-motion 2>&1 | Select-Object -Last 30)",
+      "PowerShell(Get-Command npm.cmd)",
+      "PowerShell(Set-Location \"C:\\\\Users\\\\diegu\\\\fortekpr\"; $env:Path = [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"Path\",\"User\"\\); node scripts/preview-crop.mjs)"
+    ]
+  }
+}

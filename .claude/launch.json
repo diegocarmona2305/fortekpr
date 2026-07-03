@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "fortekpr-dev",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "C:\\Users\\diegu\\fortekpr\\scripts\\dev.cmd"],
+      "port": 3000
+    }
+  ]
+}
