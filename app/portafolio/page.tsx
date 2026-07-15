@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
-import PortfolioCard from "@/components/PortfolioCard";
+import PortfolioZigzagCard from "@/components/PortfolioZigzagCard";
 import { PORTFOLIO_PROJECTS } from "@/lib/portfolio";
 
 export const metadata: Metadata = {
@@ -15,9 +15,9 @@ export default function PortafolioPage() {
       <div className="mx-auto max-w-7xl">
         <SectionHeading title="Portafolio de Proyectos" />
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
-          {PORTFOLIO_PROJECTS.map((project) => (
-            <PortfolioCard key={project.name} project={project} />
+        <div className="mt-16 flex flex-col gap-20 lg:mt-20 lg:gap-28">
+          {PORTFOLIO_PROJECTS.map((project, index) => (
+            <PortfolioZigzagCard key={project.name} project={project} position={index + 1} />
           ))}
         </div>
       </div>

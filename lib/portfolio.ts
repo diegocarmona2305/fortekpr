@@ -7,15 +7,17 @@ export const PORTFOLIO_PROJECTS = [
     url: "https://professionalalignmentpr.com",
     urlLabel: "professionalalignmentpr.com",
     accent: "#E01020",
+    image: "/portfolio-professional-alignment.jpg",
   },
   {
     name: "Jean La Barber",
     category: "Página Web Informativa",
     description:
       "Barbería premium con carrusel de trabajos y reservas por WhatsApp.",
-    url: "https://jean-la-barber-i6a7.vercel.app",
-    urlLabel: "jean-la-barber-i6a7.vercel.app",
+    url: "https://jeanlabarber.com",
+    urlLabel: "jeanlabarber.com",
     accent: "#C9A84C",
+    image: "/portfolio-jean-la-barber.jpg",
   },
   {
     name: "Valentina Dávila",
@@ -25,5 +27,6 @@ export const PORTFOLIO_PROJECTS = [
     url: null,
     urlLabel: null,
     accent: "#4A90D9",
+    image: null,
   },
 ];
